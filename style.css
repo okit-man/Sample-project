@@ -19,23 +19,57 @@ body {
     background-color: #03462d;
 }
 .nav li {
+    overflow: hidden;
     list-style-type: none;
-    padding: 12px;
-    gap: 1.5em;   
+    /* 12px was initially use  */
+    padding: 10px;
+    gap: 1.5em;
 }
-.nav a {
+.nav a {   
     text-decoration: none;
     color: #f1f1f1;
     font-size: 1.1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-transform: capitalize;
 }
-nav li a :hover {
-    color: red;
+li a.active {
+    background-color: red;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: #f1f1f1;
 }
-label {
+li a:hover:not(.active) {
+    color: #cbc9c9;
+    background-color: black;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+label .Esc {
     font-size: 1.8em;
 }
+nav .side-bar {
+ position: fixed;
+ top: 0;
+ right: 0;
+ z-index: 999;
+ height: 100vh;
+ width: 250px;
+ background-color: #03462e73;
+ backdrop-filter: blur(20px);
+ box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1px);
+ display: none;
+ justify-content: flex-start;
+ align-items: flex-start;
+ flex-direction: column;
+}
+.side-bar li {
+    width: 100%;
+    /* margin-left: 10px; */
+}
+.side-bar a {
+    width: 100%;
+}
+
 h2 {
     margin: 15px;
     color: black;

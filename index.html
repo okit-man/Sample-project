@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First-Choice</title>
+    <title>Eschool</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 
 </head>
 <body>
     <div>
-       <div>
-        <!-- <a href="#" class="Esc">ESchool</a> -->
-        <ul class="nav">
-            <!-- <li><a href="#" class="Esc">ESchool</a></li> -->
-             <label for=""><a href="#" class="Esc">ESchools</a></label>
-            <li><a href="#">Home</a></li>
+       <nav>
+         <ul class="nav side-bar">
+             <!-- <label for=""><a href="#" class="Esc">ESchools</a></label> -->
+                <label onclick=hideSidebar()>
+                    <a class="active" href="#" class="active">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f1f1f1">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg>
+                    </a>
+                </label>
+            <li><a class="active" href="#" class="active">Home</a></li>
             <li><a href="#">School</a></li>
             <li><a href="#">Sch mang</a></li>
             <li><a href="#">Admission</a></li>
@@ -29,7 +35,32 @@
             <li><a href="#">store</a></li>
             <li><a href="#">Study-abroad</a></li>
         </ul>
-       </div>
+        <!-- <a href="#" class="Esc">ESchool</a> -->
+        <ul class="nav">
+             <label for=""><a href="#" class="Esc">ESchools</a></label>
+            <li><a class="active" href="#" class="active">Home</a></li>
+            <li><a href="#">School</a></li>
+            <li><a href="#">Sch mang</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Teacher</a></li>
+            <li><a href="#">Ejobs</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">Exam</a></li>
+            <li><a href="#">Ebook</a></li>
+            <li><a href="#">Comparison</a></li>
+            <li><a href="#">store</a></li>
+            <li><a href="#">Study-abroad</a></li>
+            
+            <label for="menu-toggle" onclick = showSidebar()>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px" fill="#f1f1f1">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </a>
+            </label>
+        </ul>
+       </nav>
 
        <div>
         <h2>Search for your school of choice by name, category and location </h2>
@@ -111,35 +142,20 @@
        </div>
         
     </div>
-    <!-- <div class="main">
-        <h2>Search for your school of choice by name, category and location </h2>
-        <div class="search">
-            <label for="school name"></label>
-            <input type="search" name="" id="" value="search by school name  ">
 
-            <label for="location"></label>
-            <input type="search" name="" id="" value="search by location">
 
-            <label for="serach button"></label>
-            <input type="search" class="search3" name="" id="" value="search">
-        </div>
-        <div>
-            <div>
-                <h3>sign up</h3>
-                <p>signup up to your school on ESchool</p>
-                <button type="button">click</button>
-            </div>
-            <div>
-                <h3>sign up</h3>
-                <p>signup up to your school on ESchool</p>
-                <button type="button">click</button>
-            </div>
-            <div>
-                <h3>sign up</h3>
-                <p>signup up to your school on ESchool</p>
-                <button type="button">click</button>
-            </div>
-        </div>
-    </div> -->
+
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector(".side-bar");
+            sidebar.style.display = "flex";
+        }
+         function hideSidebar() {
+                const sidebar = document.querySelector(".side-bar");
+                sidebar.style.display = "none";
+            }
+
+    </script>
 </body>
 </html>
