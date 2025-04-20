@@ -368,22 +368,27 @@ p {
     
     .search-btn1,
     .search-btn2 {
-        width: 55%;
+        width: 60%;
     
     }
     
     .search-btn3 {
-        width: 55%;
+        width: 60%;
     }
     
     h2 {
         font-size: 1.2em;
         text-align: center
     }
+    .eschool {
+        width: 68%;
+    }
     .ebtn-1,
     .ebtn-2,
     .ebtn-3 {
         width: 60%;
-        margin: 40px;
+        margin: 35px;
     }
+   
+
 }
