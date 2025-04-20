@@ -307,31 +307,19 @@ p {
     .side-bar {
         display: none;
     }
-        .svg-menu {
-           
-            display: block;
-        }
-    .nav {
-        background-color: red;
+    .svg-menu {
+        display: block;
     }
     .search-btn3 {
         width: 29%;
     }
     .eschool {
-        /* flex-direction: column; */
-        /* flex-wrap: wrap; */
         display: block;
         justify-content: center;
         align-items: center;
         width: 72%;
         margin: auto;
         margin-bottom: 30px;
-    }
-    .ebtn-1,
-    .ebtn-2,
-    .ebtn-3 {
-        /* width: 60%; */
-        /* margin: 40px 130px; */
     }
     .groups {
         display: grid;
@@ -342,7 +330,6 @@ p {
     }
     .grp {
         border-radius: 15px;
-        /* margin: 10px; */
     }
 }
 
@@ -359,13 +346,9 @@ p {
     .side-bar {
         display: none;
     }
-    .nav {
-        background-color: royalblue;
-    }
     h2 {
         font-size: 1.3em;
         text-align: center;
-        /* flex-wrap: nowrap; */
     }
     .search-btn1 {
         width: 25%;
@@ -400,13 +383,9 @@ p {
     .hidOnMobile {
         display: none;
     }
-        .nav {
-            background-color: orangered;
-        }
 
     .menu-toggle {
         display: block;
-        /* margin-left: 520px; */
     }
 
     .side-bar {
