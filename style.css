@@ -47,6 +47,7 @@ li a:hover:not(.active) {
 label .Esc {
     font-size: 1.8em;
 }
+/* side bar menu for responsive design */
 nav .side-bar {
  position: fixed;
  top: 0;
@@ -62,14 +63,21 @@ nav .side-bar {
  align-items: flex-start;
  flex-direction: column;
 }
-.side-bar li {
+ .side-bar li {
     width: 100%;
-    /* margin-left: 10px; */
+    margin-left: 15px;
 }
 .side-bar a {
     width: 100%;
 }
-
+/* since i dint use the li, i use label to house the menu-toggle  */
+.svg-menu {
+    margin: 0 0 -7px 10px;
+}
+/* close icon for the side bar */
+.hideSidebar {
+    margin-left: 20px;
+}
 h2 {
     margin: 15px;
     color: black;
@@ -82,12 +90,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 33px;
-    margin-top: 23px;
+    margin: 23px 0 33px 0;
     gap: 12px;
 }
-.search-btn1 {
-    padding: 6px 30px ;
+.search-btn1, .search-btn2 {
+    padding: 8px 30px ;
     font-size: 0.8em;
     font-weight: normal;
     text-align: left;
@@ -97,17 +104,7 @@ h2 {
     width: 20%;
     padding-left: 11px;
 }
-.search-btn2 {
-    padding: 6px 30px;
-    font-size: 0.8em;
-    font-weight: normal;
-    text-align: left;
-    background-color: #ddd;
-    border: none;
-    border-radius: 3px;
-    width: 20%;
-    padding-left: 11px;
-}
+
 .search-btn3 {
     padding: 6px 30px;
     background-color: green;
@@ -146,25 +143,12 @@ p {
     text-decoration: none;
     display: inline-block;
 }
-.esc-1 {
+.esc-1, .esc-2 {
     background-color: #03462d;
     padding: 45px 50px;
     border-radius: 10px;
 }
-.ebtn-1 {
-    margin-top: 40px;
-    width: 100%;
-    background-color: green;
-    color: white;
-    border-radius: 5px;
-}
-
-.esc-2 {
-    background-color: #03462d;
-    padding: 45px 50px;
-    border-radius: 10px;
-}
-.ebtn-2 {
+.ebtn-1, .ebtn-2, .ebtn-3 {
     margin-top: 40px;
     width: 100%;
     background-color: green;
@@ -174,15 +158,8 @@ p {
 
 .esc-3 {
     background-color: #03462d;
-    padding: 45px 50px;
+    padding: 35px 50px;
     border-radius: 10px;
-}
-.ebtn-3 {
-    margin-top: 22px;
-    width: 100%;
-    background-color: green;
-    color: white;
-    border-radius: 5px;
 }
 
 .groups {
@@ -284,4 +261,129 @@ p {
     color: black;
     font-size: 1em;
     background-color: transparent;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .hidOnMobile {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+    .side-bar {
+        display: none;
+    }
+    .nav {
+        background-color: red;
+    }
+    .search-btn3 {
+        width: 29%;
+    }
+    .eschool {
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 72%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .ebtn-1,
+    .ebtn-2,
+    .ebtn-3 {
+        /* width: 60%; */
+        /* margin: 40px 130px; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hidOnMobile {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+    
+    .side-bar {
+        display: none;
+    }
+    .nav {
+        background-color: royalblue;
+    }
+    h2 {
+        font-size: 1.3em;
+        text-align: center;
+        /* flex-wrap: nowrap; */
+    }
+    .search-btn1 {
+        width: 25%;
+       
+    }
+    .search-btn2 {
+        width: 21%;
+    }
+    .search-btn3 {
+        width: 23%;
+        
+    }
+    .eschool {
+        width: 60%;
+    }
+    .esc-btn{
+        padding: 10px 20px;
+    }
+    .ebtn-1,
+    .ebtn-2,
+    .ebtn-3 {
+        width: 60%;
+        margin: 40px 65px;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .hidOnMobile {
+        display: none;
+    }
+        .nav {
+            background-color: orangered;
+        }
+
+    .menu-toggle {
+        display: block;
+        /* margin-left: 520px; */
+    }
+
+    .side-bar {
+        display: none;
+    }
+    .search {
+        flex-direction: column;
+    }
+    
+    .search-btn1,
+    .search-btn2 {
+        width: 55%;
+    
+    }
+    
+    .search-btn3 {
+        width: 55%;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+        text-align: center
+    }
+    .ebtn-1,
+    .ebtn-2,
+    .ebtn-3 {
+        width: 60%;
+        margin: 40px;
+    }
 }
