@@ -65,20 +65,22 @@ nav .side-bar {
  align-items: flex-start;
  flex-direction: column;
 }
+
  .side-bar li {
-    width: 100%;
-    margin-left: 15px;
-}
+     width: 100%;
+     margin-left: 20px;
+ }
 .side-bar a {
     width: 100%;
 }
 /* since i dint use the li, i use label to house the menu-toggle  */
 .svg-menu {
     margin: 0 0 -7px 10px;
+    display: none;
 }
 /* close icon for the side bar */
 .hideSidebar {
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 8px;
 }
 h2 {
@@ -305,6 +307,10 @@ p {
     .side-bar {
         display: none;
     }
+        .svg-menu {
+           
+            display: block;
+        }
     .nav {
         background-color: red;
     }
@@ -408,6 +414,9 @@ p {
     }
     nav .side-bar {
         width: 400px;
+    }
+    .side-bar li {
+        line-height: 20px;
     }
     .search {
         flex-direction: column;
